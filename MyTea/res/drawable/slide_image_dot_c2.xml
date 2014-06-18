@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+   
+    <!-- 单选按钮选中状态 -->
+    <item android:drawable="@drawable/page_now" android:state_checked="true"/>
+    <!-- 单选按钮未被选中状态 -->
+    <item android:drawable="@drawable/page"></item>
+
+</selector>

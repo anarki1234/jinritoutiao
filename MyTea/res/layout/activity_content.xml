@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#399a00"
+        android:orientation="vertical" >
+
+        <!-- 文本标题 -->
+
+        <TextView
+            android:id="@+id/textView_content_title"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="文本标题"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView_content_create_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView_content_source"
+                android:layout_alignBottom="@+id/textView_content_source"
+                android:layout_marginLeft="28dp"
+                android:layout_toRightOf="@+id/textView_content_source"
+                android:text="日期时间"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView_content_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:text="买买茶"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- 显示网页的控件 -->
+
+    <WebView
+        android:id="@+id/webView_content_wap_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <!-- 用的时候计算一下菜单高度 -->
+
+    <LinearLayout
+        android:id="@+id/linear_content_menu"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#efebef"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <!-- 返回 -->
+
+        <ImageView
+            android:id="@+id/imageView_content_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="clickButton"
+            android:src="@drawable/contentback" />
+        <!-- 收藏 -->
+
+        <ImageView
+            android:id="@+id/imageView_content_collect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="clickButton"
+            android:src="@drawable/collectcontent" />
+        <!-- 分享 -->
+
+        <ImageView
+            android:id="@+id/imageView_content_share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="clickButton"
+            android:src="@drawable/contentshare" />
+    </LinearLayout>
+
+</LinearLayout>

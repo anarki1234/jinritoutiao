@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <!-- android:duration为时隔时间 -->
+    <item
+        android:drawable="@drawable/animation_1"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/animation_2"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/animation_3"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/animation_4"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/animation_5"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/animation_6"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/animation_7"
+        android:duration="200"/>
+
+</animation-list>

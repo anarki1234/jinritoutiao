@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f7f7f7"
+    android:orientation="vertical" >
+
+    <!-- 上方的广告 -->
+
+    <RelativeLayout
+        android:id="@+id/relative_fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.zhong.widget.MyViewPager
+            android:id="@+id/viewPager_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <!-- 轮播广告的名字 -->
+
+            <TextView
+                android:id="@+id/textView_fragment_content_titleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="广告文字"
+                android:textColor="#fff" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+
+                <RadioButton
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+
+                <RadioButton
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+            </RadioGroup>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.zhong.widget.XListView
+        android:id="@+id/listView_contentfragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f5f5"
+        android:cacheColorHint="#0000"
+        android:divider="@drawable/dis_behind_side" />
+
+</LinearLayout>
